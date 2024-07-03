@@ -102,7 +102,7 @@ int main()
             shmptr->msg[strcspn(shmptr->msg,"\n")]=='\0';
         }
         shmptr->rw=1;
-        shmctl(shmid,IPC_RMID,NULL);
     }
+        shmctl(shmid,IPC_RMID,NULL);
     return 0;
 }
